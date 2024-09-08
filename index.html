@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <a href="https://app.aluracursos.com/user/lucasramirez" target="_blank"> 
+                <img class="logo__lrdi" src="./assets/lrdi.png" alt="Logo LRamirez.DI">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>
+            <i class='bx bx-food-menu'></i> 
+            Lista de compras
+        </h1>
+
+        <div class="search">
+            <form>
+                <li>
+                    
+                </li>
+                <input type="text" id="productoInput" placeholder="Agrega tu alimento aquí...">
+                <button class="btn-add"><i class='bx bx-cart-add'></i></button>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="categorias">
+            <button class="btn-cat" onclick="toggleMenu()"><i class='bx bx-list-ul'></i>Categorias</button>
+            <div id="menuCategorias" class="botones-prod">
+                <a href="#" class="btn-prod" data-rubro="Almacén">Almacén</a>
+                <a href="#" class="btn-prod" data-rubro="Bebidas">Bebidas</a>
+                <a href="#" class="btn-prod" data-rubro="Lácteos y Fiambres">Lácteos y Fiambres</a>
+                <a href="#" class="btn-prod" data-rubro="Carnes y Pescados">Carnes y Pescados</a>
+                <a href="#" class="btn-prod" data-rubro="Frutas y Verduras">Frutas y Verduras</a>
+                <a href="#" class="btn-prod" data-rubro="Panadería">Panadería</a>
+                <a href="#" class="btn-prod" data-rubro="Congelados">Congelados</a>
+                <a href="#" class="btn-prod" data-rubro="Limpieza">Limpieza</a>
+                <a href="#" class="btn-prod" data-rubro="Perfumería y Cuidado personal">Perfumería y Cuidado personal</a>
+            </div>
+        </div>
+
+        <div class="li-container">
+            <ul id="listasDeProductos">
+                
+                <div class="empty">
+                    <p>No tienes alimentos en la lista.</p>
+                </div>
+
+                <button class="btn-listo disable" id="btnAgregarMas" >Agregar más alimentos</button>
+
+            </ul>
+
+            <br>
+
+            <button class="btn-listo disable" id="btnListo">¡Listo!</button>
+
+        </div>
+    </div>
+        
+    <footer class="footer">
+
+        <p>● Creado por 
+            <a class="usuario" href="https://www.instagram.com/lramirez.di/" target="_blank">
+                LRamirez.DI 
+            </a>
+            - 2024 ●   
+        </p>
+
+        <div>
+
+            <a href="https://github.com/LucasNicolasRamirez" target="_blank">
+                <img class="links" src="./assets/github.png" alt="Icono github"/>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lucasnicolásramírez/" target="_blank">
+                <img class="links" src="./assets/linkedin.png" alt="Icono linkedin" />
+            </a>
+
+            <a href="https://www.instagram.com/lramirez.di/" target="_blank">
+                <img class="links" src="./assets/instagram.png" alt="Icono instagram" />
+            </a>
+
+        </div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
